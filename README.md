@@ -18,13 +18,14 @@ Target variable : Price
 Python (Pandas, NumPy, matplotlib and seaborn)
 Baseline Linear Regression model
 
-## Methodology
+### Methodology
 1. Data Cleaning and Exploratory Data Analysis (EDA):
   - Handling missing values and duplicates.
   - Converted data types where needed.
   - Remove outliers by trimming the bottom and top 10% of properties in terms of price.
   - Removed low and high cardinality features.
   - Drop any columns that would create issues of multicollinearity.
+    
 2. Feature Preparation:
   - Encoded categorical variables
   - Normalized numerical features
