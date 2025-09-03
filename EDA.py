@@ -49,7 +49,6 @@ df = pd.get_dummies(df, columns =['furnishingstatus'], drop_first = True)
 df.corr()
 
 # using a barchart to display the correlation btw features
-
 corr = df.corr()['price'].drop('price')
 plt.figure(figsize=(8,5))
 sns.barplot(x=corr.values, y = corr.index)
@@ -66,27 +65,7 @@ plt.show()
 plt.scatter(x = df['price'], y = df['area'])
 plt.show()  
 
-#split data 80% for training and 20% for testing the model
-X = df.drop('price', axis=1)
-y = df['price']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) 
-
-#A baseline model building
-model = LinearRegression()
-model.fit(X_train, y_train)
-
-y_pred = model.predict(X_test)
-
-print('r2 score:', r2_score(y_test, y_pred))
-print('mse:', mean_squared_error(y_test, y_pred))
-
-## r2 score = 0.6529242642153185
-mse: 1754318687330.6633
-- An r2 score of 0.6529242642153185 meaning that, the baseline model linear regression explains 65% of the
-varaince in price.
-- the mse shows that the predictions still have large error (in millions), meaning the linear model struggles 
-with capturing complex patterns.
 
 
 
