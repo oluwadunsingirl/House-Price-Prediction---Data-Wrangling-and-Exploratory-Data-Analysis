@@ -83,6 +83,11 @@ print('mse:', mean_squared_error(y_test, y_pred))
 
 ## r2 score = 0.6529242642153185
 mse: 1754318687330.6633
+- An r2 score of 0.6529242642153185 meaning that, the baseline model linear regression explains 65% of the
+varaince in price.
+- the mse shows that the predictions still have large error (in millions), meaning the linear model struggles 
+with capturing complex patterns.
+
 
 
 
