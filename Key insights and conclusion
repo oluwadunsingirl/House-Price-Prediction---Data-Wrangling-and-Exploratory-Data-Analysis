@@ -2,16 +2,18 @@
 -Features such as area, number of bedrooms, parking and preferred area showed the strongest relationship with price during
 data exploration.
 
-- The linear regression baseline model achieved an r2 score of 0.6529242642153185 meaning that, the model explains 
-65% of the varaince in price.
+- To benchmark the models perfomance, I started with a baseline model that predicts the mean house price ($4.7M), this approach 
+produced a mean absolute error(MAE) of about 1.35M, which meant that the baseline prediction (of 4.7M) was off by about 1.3M
+on average.
+Next, I trained a Linear Regression Model on the training data set, the model achieved an MAE of 0.72M, which is a significant 
+improvement over the baseline model. This indicates that the model is able to capture meaningful relationship between features
+(such as area, number of rooms etc.) and price.
 
-- The model mean square error was 1.75 trillion, mse shows that the predictions has large error (in millions), 
-meaning the linear model struggles with capturing complex patterns.
-- RMSE gives an average prediction error of roughly 1.3 million per house price prediction.
+### Conclusion 
+The model was evaluated on the test data to check generalisation. The test set MAE was (0.970M), confirming that the model 
+generalises reasonably well on unseen data.
 
-
-### Conclusion and Recommendation
-
-The baseline linear regression model provides a moderate fit for predicting house prices, explaining about two-thirds of the
-variability in the dataset. The high prediction error however suggests that more advanced models such as random forest
-would be necessary for more accurate predictions.
+### Recommendation
+The model can be improved through feature engineering and applying hyperparameter tuning for optimization.
+Additionally, other model that perform better on structured data can be used such as, Decision Tree and Random Forest for better
+model performance.
