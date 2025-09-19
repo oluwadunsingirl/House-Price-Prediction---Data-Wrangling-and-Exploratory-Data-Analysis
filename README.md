@@ -1,8 +1,7 @@
-# House-Price-Prediction-Data-Wrangling-and-Exploratory-Data-Analysis
-Exploratory data analysis and data wrangling on a housing data, to build a model to predict property price. 
+# House-Price-Prediction
+A data science project focused on exploratory data analysis (EDA), data wrangling and machine learning to predict house price. 
 ## Introduction
-Exploratory data analysis (EDA) and data wrangling on a housing dataset to prepare features for buildig a house
-price prediction model.
+The goal of this project is to analyse housing data, ckean and prepare it for modeling and build predictive model that can estimate property prices. 
 This project focuses on cleaning the data, handling missing values, exploring relationships and uncovering insights 
 of a housing dataset to prepare features for a predictive modeling task.
 
